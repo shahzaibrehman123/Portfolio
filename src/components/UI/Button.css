@@ -1,0 +1,25 @@
+:root {
+    --primary: #1888ff;
+}
+
+.btn{
+    padding: 8px 20px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: grey !important;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid;
+    border-color: grey !important;
+}
+
+.btn:hover {
+   
+
+
+    color: white !important;
+
+    border: 2px solid white
+}
