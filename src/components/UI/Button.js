@@ -13,7 +13,7 @@ function Button() {
   };
   return (
 
-    <button className='btn' onClick={downloadResume}>
+    <button style={{marginTop:'20px', marginLeft:'15%'}} className='glow-on-hover' onClick={downloadResume}>
     
         Download Resume
         <Icon style={{paddingLeft:'10px'}} fontSize={30} icon="material-symbols:download" />

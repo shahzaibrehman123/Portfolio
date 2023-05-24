@@ -11,6 +11,7 @@
 }
 
 .navbar-logo {
+  display: block;
   color: grey;
   justify-self: start;
   margin-left: 10px;

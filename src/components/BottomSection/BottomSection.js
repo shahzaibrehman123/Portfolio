@@ -38,7 +38,12 @@ function BottomSection() {
       <div className="card-container">
         {cardsData.map((card, index) => (
           <div className="card" key={index}>
-            <Icon className="card-image " color="grey" fontSize={40} icon={card.Icon} />
+            <Icon
+              className="card-image "
+              color="grey"
+              fontSize={40}
+              icon={card.Icon}
+            />
             <h3 className="card-heading">{card.heading}</h3>
             <p className="card-description">{card.description}</p>
           </div>

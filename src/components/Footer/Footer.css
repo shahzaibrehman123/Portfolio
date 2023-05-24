@@ -1,0 +1,157 @@
+.container-ft {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.footer {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.links {
+  margin-left: 50%;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 960px) {
+  .links {
+    margin-left: 40%;
+    text-decoration: none;
+  }
+}
+
+.gradient-text {
+  display: block;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* Fallback: Set a background color. */
+  background-color: white;
+
+  /* Create the gradient. */
+  font-size: 33px;
+  background-image: linear-gradient(
+    45deg,
+    grey 16.666%,
+    grey 16.666%,
+    wheat 33.333%,
+    grey 33.333%,
+    wheat 50%,
+    grey 50%,
+    grey 66.666%,
+    wheat 66.666%,
+    wheat 83.333%,
+    white 83.333%
+  );
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+}
+
+.btn-container {
+  margin-top: 20px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.a-tag {
+  text-decoration: none !important;
+  font-size: 15px;
+  color: grey;
+}
+.a-tag:hover {
+  color: white;
+}
+.para {
+  size: 15px;
+  color: grey;
+}
+
+.glow-on-hover {
+  display: block;
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: grey;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

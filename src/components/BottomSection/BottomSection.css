@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-top: 40px;
 }
 
 .card-container {
@@ -94,3 +95,4 @@
 
   /* Use the text as a mask for the background. */
 }
+

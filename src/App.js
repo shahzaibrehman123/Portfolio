@@ -5,6 +5,7 @@ import "./App.css";
 import Hero from "./components/Hero/Hero";
 import SwiperSlider from "./components/Swiper/Swiper";
 import BottomSection from "./components/BottomSection/BottomSection";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Hero/>
         <SwiperSlider/>
         <BottomSection/>
+        <Footer/>
       </BrowserRouter>
       
     </div>
