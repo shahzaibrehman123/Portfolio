@@ -16,6 +16,20 @@
   color: white;
 }
 
+@media screen and (max-width: 390px) {
+  .hero-container {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    /* padding-bottom: 50px; */
+    margin-bottom: 9%;
+  }
+
+}
+
+
 .hero-image {
   max-width: 100%;
   width: 120px;

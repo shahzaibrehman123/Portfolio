@@ -35,7 +35,7 @@ function BottomSection() {
       <div className="gradient-text">
         Collaborate with brands and agencies to create impactful results.
       </div>
-      <div className="card-container">
+      <div className="card-container px-0">
         {cardsData.map((card, index) => (
           <div className="card" key={index}>
             <Icon
